@@ -1,0 +1,7 @@
+{
+    "java.autobuild.enabled": true,
+    "java.project.sourcePaths": [
+        ".",
+        "src"
+    ]
+}
