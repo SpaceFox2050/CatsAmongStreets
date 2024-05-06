@@ -19,7 +19,7 @@ public class Stab extends Character {
 
     @Override
     public void initialize() {
-        setStats("characterStats/stabbyrobot.stats");
+        setStats("characterStats/stab.stats");
         sword = new Sword(main, new Vector2D(getX(), getY()), getPlayer(), 175);
         add(sword);
 
