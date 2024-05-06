@@ -44,19 +44,19 @@ public class Ninja extends Character {
 
         if(getPlayer() == 1){
             characterAsset = new Asset(new String[]{
-                "assets/characters/Ninja/ninja_p1-01.png",
-                "assets/characters/Ninja/ninja_mad_p2-01.png"
+                "assets/characters/assassin/ninja_p1.png",
+                "assets/characters/assassin/ninja_mad_p1.png"
             }, new Vector2D(0, 0), 128, 128, 3);
         }else{
             characterAsset = new Asset(new String[]{
-                "assets/characters/Ninja/ninja_p2-01.png",
-                "assets/characters/Ninja/ninja_mad_p2-01.png"
+                "assets/characters/assassin/ninja_p2.png",
+                "assets/characters/assassin/ninja_mad_p2.png"
             }, new Vector2D(0, 0), 128, 128, 3);
         }
         
         characterAsset.setVisible(true);
         add(characterAsset);
-        healthup = new Asset("assets/characters/Ninja/health-01.png", new Vector2D(0, 0), 3);
+        healthup = new Asset("assets/characters/assassin/heal.png", new Vector2D(0, 0), 3);
         healthup.setVisible(false);
         add(healthup);
         characterAsset.flipHorizontal();
@@ -66,9 +66,8 @@ public class Ninja extends Character {
         healthsfx = new AudioPlayer("assets/SFX/healthup.wav");
         teleport = new AudioPlayer("assets/SFX/teleport.wav");
 
-        abilityIcon = new Asset("assets/characters/Ninja/health-01.png", new Vector2D(0, 0), 130, 130, 3);
-        ultIcon = new Asset("assets/characters/Ninja/ninja_mad_p1-01.png", new Vector2D(0, 0), 130, 130, 3);
-
+        abilityIcon = new Asset("assets/characters/assassin/heal.png", new Vector2D(0, 0), 130, 130, 3);
+        ultIcon = new Asset("assets/characters/assassin/dash.png", new Vector2D(0, 0), 130, 130, 3);
     }
 
     @Override
