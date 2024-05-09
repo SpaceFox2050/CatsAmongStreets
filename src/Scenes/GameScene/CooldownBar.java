@@ -67,4 +67,12 @@ public class CooldownBar extends Entity {
         }
     }
 
+    public int getCurCooldown(){
+        return curCooldown;
+    }
+
+    public boolean getIsCooledDown(){
+        return isUltCooldown; 
+    }
+
 }

@@ -170,6 +170,10 @@ public abstract class Character extends CollisionEntity {
         return defense;
     }
 
+    public boolean flipped(){
+        return flipped; 
+    }
+
     public void updateCharacter(double deltaT, ArrayList<Integer> keyCodes) {}
 
     // do not override update in child classes, change updateCharacter instead

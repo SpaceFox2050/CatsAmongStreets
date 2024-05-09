@@ -31,8 +31,7 @@ public class Main extends KYscreen implements MouseInputListener {
     @Override
     public void start() {
         mousePos = new Vector2D(0, 0);
-        setTitle("Packing Some Smack!");
-        // setDebugMode(true);
+        setTitle("Cats Among Streets");
         addMouseListener(this);
         addMouseMotionListener(this);
         // backgroundMusic = new AudioPlayer("assets/SFX/background_music_test.wav");
@@ -65,15 +64,15 @@ public class Main extends KYscreen implements MouseInputListener {
     }
 
     public void resetCharacters() {
-        characters = new Character[5][2]; // different characters
-        characters[0][0] = new Spaceship(this);
-        characters[1][0] = new StabbyRobot(this);
-        characters[2][0] = new BoxRobot(this);
-        characters[3][0] = new Assassin(this);
-        characters[0][1] = new Spaceship(this);
-        characters[1][1] = new StabbyRobot(this);
-        characters[2][1] = new BoxRobot(this);
-        characters[3][1] = new Assassin(this);
+        characters = new Character[4][2]; // different characters
+        characters[0][0] = new robot(this);
+        characters[1][0] = new stab(this);
+        characters[2][0] = new tank(this);
+        characters[3][0] = new ninja(this);
+        characters[0][1] = new robot(this);
+        characters[1][1] = new stab(this);
+        characters[2][1] = new tank(this);
+        characters[3][1] = new ninja(this);
     }
 
     public void setScene(Scene scene) {
