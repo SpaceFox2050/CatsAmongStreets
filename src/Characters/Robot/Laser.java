@@ -9,7 +9,7 @@ public class Laser extends DamageEntity {
 
     public Laser(Main main, Vector2D position, int player) {
         super(main, position, 200, 5, 2, player, 150);
-        laserAsset = new Asset("assets/characters/spaceship/laser.png", new Vector2D(0, 0), 0);
+        laserAsset = new Asset("assets/characters/robot/laser.png", new Vector2D(0, 0), 0);
         laserAsset.setVisible(true);
         add(laserAsset);
         setBreaks(true);

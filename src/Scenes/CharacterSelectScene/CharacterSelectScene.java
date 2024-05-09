@@ -9,10 +9,10 @@ public class CharacterSelectScene extends Scene {
     SelectionCursor p1Cursor;
     SelectionCursor p2Cursor;
 
-    Asset spaceship;
-    Asset stabby;
-    Asset boxrobot;
-    Asset assassin;
+    Asset robot;
+    Asset stab;
+    Asset tank;
+    Asset ninja;
 
     public CharacterSelectScene(Main main) {
         super(main);
@@ -35,26 +35,26 @@ public class CharacterSelectScene extends Scene {
                 main);
         p2Cursor = new SelectionCursor("assets/misc/p2cursor.png", new Vector2D(width * 0.5 + 110, height * 0.75), 4, 2,
                 main);
-        spaceship = new Asset("assets/characters/spaceship/spaceship_normal.png",
+        robot = new Asset("assets/characters/robot/robot.png",
                 new Vector2D(width * 0.5 - 330, height * 0.75), 0);
-        stabby = new Asset("assets/characters/stabbyrobot/sword.png", new Vector2D(width * 0.5 - 110, height * 0.75),
+        stab = new Asset("assets/characters/stab/stab.png", new Vector2D(width * 0.5 - 110, height * 0.75),
                 110, 30, 0);
         p1Cursor.setVisible(true);
-        boxrobot = new Asset("assets/characters/boxrobot/box_robot.png", new Vector2D(width * 0.5 + 110, height * 0.75),
+        tank = new Asset("assets/characters/tank/tank.png", new Vector2D(width * 0.5 + 110, height * 0.75),
                 110, 110, 0);
-        assassin = new Asset("assets/characters/assassin/assassin.png", new Vector2D(width * 0.5 + 330, height * 0.75),
+        ninja = new Asset("assets/characters/ninja/ninja.png", new Vector2D(width * 0.5 + 330, height * 0.75),
                 110, 110, 0);
         p2Cursor.setVisible(true);
-        spaceship.setVisible(true);
-        stabby.setVisible(true);
-        boxrobot.setVisible(true);
-        assassin.setVisible(true);
+        robot.setVisible(true);
+        stab.setVisible(true);
+        tank.setVisible(true);
+        ninja.setVisible(true);
         add(p1Cursor);
         add(p2Cursor);
-        add(spaceship);
-        add(stabby);
-        add(boxrobot);
-        add(assassin);
+        add(robot);
+        add(stab);
+        add(tank);
+        add(ninja);
 
     }
 

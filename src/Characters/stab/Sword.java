@@ -10,15 +10,15 @@ public class Sword extends DamageEntity {
 
         if(getPlayer() == 1){
             swordAsset = new Asset(
-                new String[] { "assets/characters/stabbyrobot/sword_p1.png",
-                        "assets/characters/stabbyrobot/sword_boost_p1.png",
-                        "assets/characters/stabbyrobot/sword_ult_p1.png" },
+                new String[] { "assets/characters/stab/sword_p1.png",
+                        "assets/characters/stab/sword_boost_p1.png",
+                        "assets/characters/stab/sword_ult_p1.png" },
                 new Vector2D(0, 0), 60, 20, 3);
         }else{
             swordAsset = new Asset(
-                new String[] { "assets/characters/stabbyrobot/sword_p2.png",
-                        "assets/characters/stabbyrobot/sword_boost_p2.png",
-                        "assets/characters/stabbyrobot/sword_ult_p2.png" },
+                new String[] { "assets/characters/stab/sword_p2.png",
+                        "assets/characters/stab/sword_boost_p2.png",
+                        "assets/characters/stab/sword_ult_p2.png" },
                 new Vector2D(0, 0), 60, 20, 3);
         }
 

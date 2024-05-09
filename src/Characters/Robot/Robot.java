@@ -44,12 +44,7 @@ public class Robot extends Character {
 
     @Override
     public void initialize() {
-        setStats("characterStats/spaceship.stats");
-
-        /*characterAsset = new Asset(new String[] {
-                "assets/characters/robot/spaceship_normal.png",
-                "assets/characters/robot/spaceship_enraged.png"
-        }, new Vector2D(0, 0), 3);*/
+        setStats("characterStats/Robot.stats");
 
         if(getPlayer() == 1){
             characterAsset = new Asset(new String[] {
